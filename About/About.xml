@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Tiered Mechs Addon</name>
+  <author>Doug</author>
+  <packageId>Doug.TieredMechsAddon</packageId>
+  <supportedVersions><li>1.4</li></supportedVersions>
+  <description>Adds Ultratech Tunneler.</description>
+	<loadAfter>
+		<li>Pyro.TieredMechs</li>
+	</loadAfter>
+</ModMetaData>

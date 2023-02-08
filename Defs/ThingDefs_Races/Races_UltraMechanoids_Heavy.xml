@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- UltraTunneler -->
+	<ThingDef ParentName="HeavyMechanoid">
+		<defName>Mech_TunnelerUltra</defName>
+		<label>ultratech tunneler</label>
+		<description>A small ultratech work mechanoid designed to mine.</description>
+		<statBases>
+			<MoveSpeed>6.5</MoveSpeed>
+			<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+			<BandwidthCost>3</BandwidthCost>
+			<CarryingCapacity>300</CarryingCapacity>
+			<WorkSpeedGlobal>3</WorkSpeedGlobal>
+			<EnergyShieldEnergyMax>2.5</EnergyShieldEnergyMax>
+		</statBases>
+		<race>
+			<body>Mech_Tunneler</body>
+			<baseBodySize>3.5</baseBodySize>
+			<baseHealthScale>1.5</baseHealthScale>
+			<mechEnabledWorkTypes>
+				<li>Mining</li>
+			</mechEnabledWorkTypes>
+			<mechFixedSkillLevel>20</mechFixedSkillLevel>
+			<lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+					<soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+				</li>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>100</minAge>
+					<soundWounded>Pawn_Mech_Tunneler_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Tunneler_Death</soundDeath>
+					<soundCall>Pawn_Mech_Tunneler_Call</soundCall>
+				</li>
+			</lifeStageAges>
+		</race>
+	</ThingDef>
+	
+	<PawnKindDef ParentName="HeavyMechanoidKind">
+		<defName>Mech_TunnelerUltra</defName>
+		<label>ultratech tunneler</label>
+		<race>Mech_TunnelerUltra</race>
+		<allowInMechClusters>false</allowInMechClusters>
+		<combatPower>250</combatPower>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/Tunneler</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Paladin</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Mechanoid/TunnelerAncient</texPath>
+					<maskPath>Things/Pawn/Mechanoid/AllegianceOverlays/Mech_Paladin</maskPath>
+					<shaderType>CutoutWithOverlay</shaderType>
+					<graphicClass>Graphic_Multi</graphicClass>
+					<drawSize>1.8</drawSize>
+					<shadowData>
+						<volume>(0.6, 0.8, 0.6)</volume>
+					</shadowData>
+				</bodyGraphicData>
+			</li>
+		</lifeStages>
+		<abilities>
+			<li>SmokepopMech</li>
+		</abilities>
+		<controlGroupPortraitZoom>1</controlGroupPortraitZoom>
+	</PawnKindDef>
+</Defs>

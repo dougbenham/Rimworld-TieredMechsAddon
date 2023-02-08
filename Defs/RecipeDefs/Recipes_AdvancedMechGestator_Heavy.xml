@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- TunnelerUltra -->
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+  <defName>TunnelerUltra</defName>
+  <label>gestate ultratech tunneler</label>
+  <description>Gestate an ultratech tunneler mechanoid.</description>
+  <researchPrerequisite>UltraMechtech</researchPrerequisite>
+  <gestationCycles>3</gestationCycles>
+  <ingredients Inherit="False">
+    <li>
+      <filter>
+        <thingDefs>
+          <li>NanostructuringChip</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>Steel</li>
+        </thingDefs>
+      </filter>
+      <count>300</count>
+    </li>
+    <li>
+    <filter>
+      <thingDefs>
+        <li>Plasteel</li>
+      </thingDefs>
+    </filter>
+    <count>350</count>
+  </li>
+  <li>
+    <filter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </filter>
+    <count>4</count>
+  </li>
+    <li>
+      <filter>
+        <thingDefs>
+          <li>SubcoreHigh</li>
+        </thingDefs>
+      </filter>
+      <count>1</count>
+    </li>
+  </ingredients>
+  <products>
+    <Mech_TunnelerUltra>1</Mech_TunnelerUltra>
+  </products>
+  <descriptionHyperlinks>
+    <ThingDef>Mech_TunnelerUltra</ThingDef>
+  </descriptionHyperlinks>
+</RecipeDef>
+
+</Defs>
