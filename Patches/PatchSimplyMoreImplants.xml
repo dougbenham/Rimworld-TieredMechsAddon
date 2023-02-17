@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove" MayRequire="turnovus.morebionicimplants">
+		<xpath>Defs/RecipeDef[defName="Turn_Make_ComponentMedical"]/skillRequirements/Medicine</xpath>
+	</Operation>
+</Patch>
