@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationRemove" MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">
+		<xpath>Defs/ThingDef[defName="FSFMechSerumBase"]/recipeMaker/skillRequirements/Medicine</xpath>
+	</Operation>
+</Patch>
