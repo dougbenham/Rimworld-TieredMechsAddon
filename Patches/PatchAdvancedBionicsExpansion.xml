@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationRemove" MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">
-		<xpath>Defs/ThingDef[@Name="FSFMechSerumBase"]/recipeMaker/skillRequirements/Medicine</xpath>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[FSF] Advanced Bionics Expansion</li>
+		</mods>
+		
+		<!-- Allow mechs to make mech serums -->
+		<match Class="PatchOperationRemove">
+			<xpath>Defs/ThingDef[@Name="FSFMechSerumBase"]/recipeMaker/skillRequirements/Medicine</xpath>
+		</match>
 	</Operation>
 </Patch>
