@@ -7,7 +7,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
-	<description>Adds Ultratech Tunneler.</description>
+	<description>Patches to remove Intellectual/Medicine requirement from few crafting recipes so that Fabricor can do them.</description>
 	<loadAfter>
 		<li>Pyro.TieredMechs</li>
 	</loadAfter>

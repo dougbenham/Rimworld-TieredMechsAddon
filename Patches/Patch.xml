@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/RecipeDef[defName="ResurrectAdvancedLightMech"]/fixedIngredientFilter/thingDefs
-		</xpath>
-		<value>
-			<li>Corpse_Mech_TunnelerUltra</li>
-		</value>
-	</Operation>
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/ThingDef[defName="AdvancedMechGestator"]/recipes
-		</xpath>
-		<value>
-			<li>TunnelerUltra</li>
-		</value>
+	<!-- Allow mechs to make medicine -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName="MedicineIndustrial"]/recipeMaker/skillRequirements/Intellectual</xpath>
 	</Operation>
 </Patch>
